@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+			integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+			crossorigin="anonymous"
+		/>
+		<link rel="stylesheet" href="./css/style.css" />
+		<title>ToDo</title>
+	</head>
+	<body>
+		<div id="general">
+			<div id="main">
+				<div class="task">
+					<div class="category">
+						<button><i class="fas fa-chevron-left"></i></button>
+						<h3>Personal</h3>
+					</div>
+					<div class="task-container">
+						<button>+</button>
+						<input class="task-input" type="text" placeholder="Add a task" />
+					</div>
+					<h5>Tasks - <span class="task-number">0</span></h5>
+					<div class="to-do-task-container"></div>
+					<div class="completed-container">
+						<h5>Completed - <span class="completed-number">0</span></h5>
+						<div class="completed"></div>
+					</div>
+				</div>
+				<div class="collections">
+					<h3>Collections</h3>
+					<div class="personal">
+						<div class="personal-icon"><i class="fas fa-user-alt"></i></div>
+						<h5>Personal</h5>
+					</div>
+					<div class="work">
+						<div class="work-icon"><i class="fas fa-briefcase"></i></div>
+						<h5>Work</h5>
+					</div>
+					<div class="studies">
+						<div class="studies-icon"><i class="fas fa-university"></i></div>
+						<h5>Studies</h5>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="./index.js"></script>
+	</body>
+</html>

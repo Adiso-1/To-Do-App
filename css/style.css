@@ -1,0 +1,163 @@
+:root {
+	--dark-color: #181820;
+	--pink-color: #d63691;
+	--light-pink-color: #d84c6f;
+	--purple-color: #aa28a3;
+	--dark-purple-color: #5e1950;
+	--light-purple-color: #77308e;
+	--grey-color: #21212b;
+	--collection-color: #272732;
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Arial, Helvetica, sans-serif;
+}
+#general {
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	background: lightsalmon;
+}
+#main {
+	background: var(--dark-color);
+	color: #fff;
+	width: 80%;
+	height: 80vh;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: center;
+	box-shadow: 15px 15px 50px rgb(0 0 0 / 80%);
+}
+.task {
+	width: 80%;
+	overflow-y: auto;
+	display: flex;
+	flex-direction: column;
+	margin: 0 0 0 auto;
+	padding: 10px;
+}
+.category {
+	display: flex;
+}
+.category > button {
+	padding: 0 10px;
+	border-radius: 20%;
+	outline: none;
+	border: none;
+	margin-right: 10px;
+	background: var(--grey-color);
+	color: #fff;
+	cursor: pointer;
+}
+.task > div {
+	margin-bottom: 4vh;
+}
+.task-container {
+	display: flex;
+	border: #f4f4f4 1px solid;
+	border-radius: 10px;
+	padding: 5px;
+}
+.task-container > button {
+	background: var(--light-pink-color);
+	border-radius: 10px;
+	padding: 0 7px;
+	outline: none;
+	border: none;
+	font-size: 1.5rem;
+	cursor: pointer;
+}
+.task-input,
+.to-do-task {
+	padding: 0 15px;
+	border: none;
+	border-radius: 8px;
+	background: inherit;
+	color: #fff;
+	outline: none;
+	font-size: 16px;
+	width: 100%;
+}
+.collections {
+	padding: 10px;
+	background: var(--collection-color);
+}
+.collections > div {
+	display: flex;
+	align-items: center;
+	padding: 10px;
+	cursor: pointer;
+}
+.collections .personal .personal-icon,
+.collections .work .work-icon,
+.collections .studies .studies-icon {
+	background: lightgreen;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 3px;
+	margin-right: 10px;
+	padding: 4px;
+}
+.collections .work .work-icon {
+	background: lightpink;
+}
+.collections .studies .studies-icon {
+	background: lightblue;
+}
+.collections > div .fas {
+	font-size: 15px;
+	color: var(--dark-color);
+}
+.collections > div:hover {
+	background: var(--grey-color);
+}
+.to-do-task {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 5px 0;
+	background: var(--grey-color);
+	padding: 10px;
+}
+.to-do-task > input {
+	height: 20px;
+	width: 20px;
+	margin-right: 10px;
+}
+.user-task {
+	width: 100%;
+	border-radius: 10%;
+}
+.trash {
+	color: var(--light-pink-color);
+	cursor: pointer;
+	margin-left: 10px;
+}
+.edit {
+	color: lightgreen;
+	cursor: pointer;
+}
+.check {
+	visibility: hidden;
+	color: lightyellow;
+	cursor: pointer;
+}
+.date {
+	margin-right: 10px;
+}
+@media screen and (max-width: 450px) {
+	#main {
+		background: var(--dark-color);
+		color: #fff;
+		height: 100vh;
+		width: 100%;
+		display: flex;
+		flex-direction: row-reverse;
+		justify-content: center;
+		box-shadow: 15px 15px 50px rgb(0 0 0 / 80%);
+	}
+}
